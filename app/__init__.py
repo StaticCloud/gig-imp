@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 def create_app(test_config=None):
     app = Flask(__name__, static_url_path='/')
@@ -9,6 +9,6 @@ def create_app(test_config=None):
 
     @app.route('/')
     def index():
-        return 'Hello, world!'
+        return render_template('home.html')
 
     return app
