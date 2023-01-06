@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS gig_imp_db;
+
+CREATE DATABASE gig_imp_db;
