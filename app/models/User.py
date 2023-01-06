@@ -16,7 +16,7 @@ class User(Base):
     occupation = Column(String(20), nullable=False)
 
     @validates('username')
-    def validate_email(self, key, username):
+    def validate_username(self, key, username):
         assert len(username) > 5
 
         return username
